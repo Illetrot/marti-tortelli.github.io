@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background: lightgrey;
 }
 
@@ -19,6 +18,32 @@ body {
     margin: 10px 0px;
 }
 
+.cabeçalho h1 {
+    font-size: 6rem;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.cabeçalho span {
+    display: block;
+    color: grey;
+    font-size: 3rem;
+    align-items: center;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: .8rem;
+}
+
 .conteúdo-portifólio {
     display: flex;
     flex-direction: column;
@@ -27,28 +52,8 @@ body {
     margin: 25px 50px;
 }
 
-.cabeçalho h1 {
-    font-size: 6rem;
-    margin: 10px 5px;
-    padding: 10px;
-}
-
-.cabeçalho nav {
-    text-align: center;
-    width: 100%;
-    height: 20px;
-}
-
-.cabeçalho h1 span {
-    display: block;
-    color: grey;
-    font-size: 3rem;
-    align-items: center;
-    padding: 15px;
-}
-
 .conteúdo-portifólio h2 {
-    display: block;
+    display: flex;
     align-self: flex-start;
     font-size: 2rem;
     padding-top: 10px;
@@ -60,13 +65,16 @@ body {
     text-align: justify;
 }
 
-button {
-    width: 20%;
-    height: 40px;
-}
+footer {
+    margin-top: auto;
 
-.conteúdo-portifólio aside {
-    display: block;
-    align-self: center;
+    background: gray;
+    color: white;
 
+    height: 8rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
